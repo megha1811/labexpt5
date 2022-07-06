@@ -16,7 +16,7 @@ void insert(){
 		rear = 0;  
 	}  
 	else{  
-		rear = rear+1;  
+		rear++;  
 	}  
 	queue[rear] = item;  
 	printf("Value inserted\n");  
