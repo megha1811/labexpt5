@@ -7,18 +7,15 @@ void insert(){
 	int item;  
 	printf("Enter the element:");  
 	scanf("%d",&item);      
-	if(rear == size-1)  
-	{  
+	if(rear == size-1){  
 		printf("OVERFLOW\n");  
 		return;  
 	}  
-	if(front == -1 && rear == -1)  
-	{  
+	if(front == -1 && rear == -1){  
 		front = 0;  
 		rear = 0;  
 	}  
-	else   
-	{  
+	else{  
 		rear = rear+1;  
 	}  
 	queue[rear] = item;  
@@ -26,30 +23,25 @@ void insert(){
 }  
 void delete(){  
 	int item;   
-	if (front == -1 || front > rear)  
-	{  
+	if (front == -1 || front > rear){  
 		printf("\nUNDERFLOW\n");  
 		return;  
 	}  
-	else  
-	{  
+	else{  
 		item = queue[front];
 		printf("Deleted value is %d\n",item);
-		if(front == rear)  
-		{  
+		if(front == rear){  
 			front = -1;  
 			rear = -1 ;  
 		}  
-		else   
-		{  
+		else{  
 			front = front + 1;  
 		}  
 	}  
 } 
 void display(){  
 	int i;  
-	if(rear == -1)  
-	{  
+	if(rear == -1){  
 		printf("\nEmpty queue\n");  
 	}  
 	else{   
@@ -60,18 +52,15 @@ void display(){
 	}  
 }   
  
-void main ()  
-{  
+void main (){  
     int choice;
     printf("Queue implementation using array\n");  
     printf("Main Menu");  
     printf("\n1.Enqueue\n2.Dequeue\n3.Display\n4.Exit\n");    
-    while(choice != 4)   
-    {
+    while(choice != 4){
         printf("\nEnter your choice:");  
         scanf("%d",&choice);  
-        switch(choice)  
-        {  
+        switch(choice){  
             case 1:{  
 	       	insert();  
             	break;
