@@ -75,7 +75,7 @@ void main (){
             }  
             case 4:{
             	printf("Exiting...\n");
-               exit(0);
+		exit(0);
             	break;
             }
             default:{
