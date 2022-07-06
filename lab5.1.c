@@ -35,7 +35,7 @@ void delete(){
 			rear = -1 ;  
 		}  
 		else{  
-			front = front + 1;  
+			front++;  
 		}  
 	}  
 } 
